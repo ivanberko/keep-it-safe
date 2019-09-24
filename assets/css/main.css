@@ -13,11 +13,14 @@ body {
   width: 1500px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .header__contacts {
   display: flex;
+  padding-top: 21px;
 }
 
 .header__contacts__phone {
@@ -70,9 +73,36 @@ body {
   color: rgb(255, 255, 255);
   font-size: 2.5em;
   font-weight: 900;
-  border: #3e3a71 solid 10px;
+  border:#428dff solid 10px;
   display: inline-block;
   padding: 10px 20px;
   margin-top: 100px;
   text-shadow: #000000 0 0 2px;
+}
+
+.services__title {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #3e3a71;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.3333%;
+  padding-bottom: 90px;
+}
+
+.services__item p {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 15px;
+  color: #3e3a71;
+
 }
