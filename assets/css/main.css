@@ -18,15 +18,15 @@ img {
 }
 
 .header {
-  position: fixed;
-  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header__logo {
   margin: 0 auto;
   margin-bottom: 1rem;
   padding-top: 1rem;
-  
 }
 
 .header__logo img {
@@ -86,10 +86,6 @@ img {
 
 .contacts__time::before {
   background-image: url(../img/icon/clock.png);
-}
-
-.main {
-  padding-top: 15.2rem;
 }
 
 .main__section {
