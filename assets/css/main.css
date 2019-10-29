@@ -17,14 +17,25 @@ img {
   height: auto;
 }
 
+.header {
+  position: fixed;
+  background: #ffffff;
+}
+
 .header__logo {
   margin: 0 auto;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  
+}
+
+.header__logo img {
+  height: 50px;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 0.8rem;
 }
@@ -35,17 +46,19 @@ img {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   font-size: 2rem;
 }
 
-.contacts__time {
-  margin: 0;
+.header p {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #3e3a71;
+  font-weight: 700;
 }
 
-.contacts__phone a,
-.header p {
-  font-size: 1.6rem;
+.contacts__phone a {
+  font-size: 2.4rem;
   text-decoration: none;
   color: #3e3a71;
   font-weight: 700;
@@ -75,6 +88,9 @@ img {
   background-image: url(../img/icon/clock.png);
 }
 
+.main {
+  padding-top: 15.2rem;
+}
 
 .main__section {
   display: flex;
