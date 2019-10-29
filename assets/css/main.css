@@ -8,7 +8,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -53,14 +53,14 @@ img {
 .header p {
   font-size: 1.2rem;
   text-decoration: none;
-  color: #3e3a71;
+  color: #428dff;
   font-weight: 700;
 }
 
 .contacts__phone a {
   font-size: 2.4rem;
   text-decoration: none;
-  color: #3e3a71;
+  color: #428dff;
   font-weight: 700;
 }
 
@@ -93,7 +93,12 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to top, rgba(62, 58, 113, 0.7), rgba(62, 58, 113, 0.7)), url(../img/Склад/ikea-2714998_1920.jpg) no-repeat 50%  100%;
+  background: linear-gradient(
+      to top,
+      rgba(62, 58, 113, 0.7),
+      rgba(62, 58, 113, 0.7)
+    ),
+    url(../img/ikea-2714998_1920.jpg) no-repeat 50% 100%;
   min-height: 500px;
   width: 100%;
   margin-bottom: 2rem;
@@ -134,21 +139,145 @@ img {
 /* ------------------------SERVICES SECTION */
 
 .services__title {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 30px;
-  color: #3e3a71;
+  padding-bottom: 3rem;
+  color: #008151;
   text-transform: uppercase;
+}
+
+.services__title::after,
+.gallery-title::after {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 0.3rem;
+  background-color: #008151;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+.services__list {
+  margin-bottom: 5rem;
 }
 
 .services__item {
   max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 2rem;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
-  color: #3e3a71;
+  color: #428dff;
+  padding: 0 1rem;
 }
 
+.services__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.services__item p::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/icon/location.png) no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.services__item:nth-child(2) p::before {
+  background: url(../img/icon/padlock.png) no-repeat center;
+  background-size: contain;
+}
+
+.services__item:nth-child(3) p::before {
+  background: url(../img/icon/cctv.png) no-repeat center;
+  background-size: contain;
+}
+
+.services__item:nth-child(4) p::before {
+  background: url(../img/icon/sprinklers.png) no-repeat center;
+  background-size: contain;
+}
+
+.services__item:nth-child(5) p::before {
+  background: url(../img/icon/trolley.png) no-repeat center;
+  background-size: contain;
+}
+
+.services__item:nth-child(6) p::before {
+  background: url(../img/icon/box.png) no-repeat center;
+  background-size: contain;
+}
+
+
+/* ------------------------gallery SECTION */
+
+.gallery-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 3rem;
+  color: #008151;
+  text-transform: uppercase;
+}
+
+.gallery-list {
+  width: 304px;
+  height: 180px;
+  background: url(../img/gallery/01.png) no-repeat center;
+  background-size: cover;
+}
+
+.gallery-list:nth-of-type(2) {
+  background: url(../img/gallery/02.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.gallery-list:nth-of-type(3) {
+  background: url(../img/gallery/03.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.gallery-list:nth-of-type(4) {
+  background: url(../img/gallery/04.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.gallery-list:nth-of-type(5) {
+  background: url(../img/gallery/08.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.gallery-list:nth-of-type(6) {
+  background: url(../img/gallery/09.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.gallery-list:nth-of-type(7) {
+  background: url(../img/gallery/05.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.gallery-list:nth-of-type(8) {
+  background: url(../img/gallery/gruzoperevozki.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.gallery-item {
+  width: 304px;
+  height: 180px;
+  background-color: #00000067;
+  display: flex;
+}
+
+.gallery-desc {
+  font-size: 1.5rem;
+  color: #06ffa2;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+}
