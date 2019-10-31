@@ -35,7 +35,7 @@ img {
 }
 
 .container {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 0.8rem;
 }
@@ -105,7 +105,7 @@ img {
 }
 
 .section__title {
-  width: 320px;
+  max-width: 320px;
   font-size: 2.4rem;
   color: #ffffff;
   font-weight: 700;
@@ -116,7 +116,7 @@ img {
 }
 
 .main__section p {
-  width: 320px;
+  max-width: 320px;
   color: #06ffa2;
   font-size: 1.8rem;
   padding: 1rem 0.5rem;
