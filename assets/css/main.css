@@ -35,7 +35,7 @@ img {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 0.8rem;
 }
@@ -50,7 +50,8 @@ img {
   font-size: 2rem;
 }
 
-.header p {
+.contacts__address,
+.contacts__time {
   font-size: 1.2rem;
   text-decoration: none;
   color: #428dff;
@@ -73,7 +74,7 @@ img {
   background-position: center;
   background-size: contain;
   vertical-align: bottom;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .contacts__phone::before {
@@ -105,7 +106,6 @@ img {
 }
 
 .section__title {
-  max-width: 320px;
   font-size: 2.4rem;
   color: #ffffff;
   font-weight: 700;
@@ -116,10 +116,9 @@ img {
 }
 
 .main__section p {
-  max-width: 320px;
   color: #06ffa2;
   font-size: 1.8rem;
-  padding: 1rem 0.5rem;
+  padding: 0 0.5rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -137,6 +136,9 @@ img {
 }
 
 /* ------------------------SERVICES SECTION */
+.services {
+  margin-bottom: 5rem;
+}
 
 .services__title {
   font-size: 3rem;
@@ -148,23 +150,20 @@ img {
 }
 
 .services__title::after,
-.gallery-title::after {
+.gallery-title::after,
+.price-title::after {
   content: "";
   display: block;
   width: 15rem;
-  height: 0.3rem;
+  height: 0.4rem;
   background-color: #008151;
   margin: 0 auto;
   border-radius: 3px;
   margin-top: 1rem;
 }
 
-.services__list {
-  margin-bottom: 5rem;
-}
-
 .services__item {
-  max-width: 320px;
+  width: 100%;
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 700;
@@ -174,7 +173,7 @@ img {
 }
 
 .services__item:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .services__item p::before {
@@ -213,10 +212,13 @@ img {
   background-size: contain;
 }
 
-
 /* ------------------------gallery SECTION */
+.gallery {
+  margin-bottom: 5rem;
+}
 
-.gallery-title {
+.gallery-title,
+.price-title {
   font-size: 1.6rem;
   font-weight: 700;
   text-align: center;
@@ -225,50 +227,52 @@ img {
   text-transform: uppercase;
 }
 
-.gallery-list {
-  width: 304px;
+.gallery-card {
+  width: 285px;
   height: 180px;
   background: url(../img/gallery/01.png) no-repeat center;
   background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
 }
 
-.gallery-list:nth-of-type(2) {
+.gallery-card:nth-of-type(2) {
   background: url(../img/gallery/02.jpg) no-repeat center;
   background-size: cover;
 }
 
-.gallery-list:nth-of-type(3) {
+.gallery-card:nth-of-type(3) {
   background: url(../img/gallery/03.jpg) no-repeat center;
   background-size: cover;
 }
 
-.gallery-list:nth-of-type(4) {
+.gallery-card:nth-of-type(4) {
   background: url(../img/gallery/04.jpg) no-repeat center;
   background-size: cover;
 }
 
-.gallery-list:nth-of-type(5) {
+.gallery-card:nth-of-type(5) {
   background: url(../img/gallery/08.jpg) no-repeat center;
   background-size: cover;
 }
 
-.gallery-list:nth-of-type(6) {
+.gallery-card:nth-of-type(6) {
   background: url(../img/gallery/09.jpg) no-repeat center;
   background-size: cover;
 }
 
-.gallery-list:nth-of-type(7) {
+.gallery-card:nth-of-type(7) {
   background: url(../img/gallery/05.jpg) no-repeat center;
   background-size: cover;
 }
 
-.gallery-list:nth-of-type(8) {
+.gallery-card:nth-of-type(8) {
   background: url(../img/gallery/gruzoperevozki.jpg) no-repeat center;
   background-size: cover;
 }
 
 .gallery-item {
-  width: 304px;
+  width: 285px;
   height: 180px;
   background-color: #00000067;
   display: flex;
@@ -281,3 +285,123 @@ img {
   margin: auto;
   text-align: center;
 }
+
+@media (min-width: 767px) {
+  .header {
+    min-height: 6rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__contacts,
+  .footer__contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts__phone a {
+    font-size: 1.2rem;
+  }
+
+  .contacts__address,
+  .contacts__phone,
+  .contacts__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  .contacts__address,
+  .contacts__phone {
+    margin-right: 2rem;
+  }
+
+  .section__title {
+    font-size: 3.4rem;
+  }
+  .main__section p {
+    font-size: 2.4rem;
+  }
+
+  .gallery-title,
+  .price-title {
+    font-size: 3rem;
+  }
+
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .services__item {
+    width: 50%;
+  }
+
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-card {
+    width: 49.5%;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    min-height: 10rem;
+  }
+
+  .footer__contacts {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .footer__contacts .contacts__phone a,
+  .footer__contacts .contacts__address,
+  .footer__contacts .contacts__time {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+  .services__item:nth-last-child(-n+2),
+  .gallery-card:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .services__item {
+    width: 33.333333%;
+  }
+
+  .services__item:nth-last-child(-n+3),
+  .gallery-card:nth-last-child(-n+4) {
+    margin-bottom: 0;
+  }
+
+  .gallery-card {
+    width: 49%;
+  }
+
+  .gallery-card {
+    width: 24.6%;
+  }
+}
+
