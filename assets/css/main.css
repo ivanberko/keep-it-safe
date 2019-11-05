@@ -90,19 +90,19 @@ img {
 }
 
 .main__section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-      to top,
-      rgba(62, 58, 113, 0.7),
-      rgba(62, 58, 113, 0.7)
-    ),
-    url(../img/ikea-2714998_1920.jpg) no-repeat 50% 100%;
+  background: url(../img/ikea-2714998_1920.jpg) no-repeat 50% 100%;
   min-height: 500px;
   width: 100%;
   margin-bottom: 2rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section__title {
@@ -272,7 +272,7 @@ img {
 
 .gallery-item {
   height: 180px;
-  background-color: rgba(0, 0, 0, 0.404);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
 }
 
