@@ -9,6 +9,7 @@
 html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
+  background-color: #e3e7f2;
 }
 
 img {
@@ -54,14 +55,14 @@ img {
 .contacts__time {
   font-size: 1.2rem;
   text-decoration: none;
-  color: #428dff;
+  color: #3f51b5;
   font-weight: 700;
 }
 
 .contacts__phone a {
   font-size: 2.4rem;
   text-decoration: none;
-  color: #428dff;
+  color: #3f51b5;
   font-weight: 700;
 }
 
@@ -78,15 +79,15 @@ img {
 }
 
 .contacts__phone::before {
-  background-image: url(../img/icon-svg/call.svg);
+  background-image: url(../img/icon-svg/call1.svg);
 }
 
 .contacts__address::before {
-  background-image: url(../img/icon-svg/location.svg);
+  background-image: url(../img/icon-svg/location1.svg);
 }
 
 .contacts__time::before {
-  background-image: url(../img/icon-svg/clock.svg);
+  background-image: url(../img/icon-svg/clock1.svg);
 }
 
 .main__section {
@@ -168,7 +169,7 @@ img {
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
-  color: #428dff;
+  color: #3f51b5;
   padding: 0 1rem;
 }
 
@@ -270,6 +271,38 @@ img {
   background-size: cover;
 }
 
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery-card {
+    background: url(../img/gallery/01@2x.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .gallery-card:nth-of-type(3) {
+    background: url(../img/gallery/03@2x.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .gallery-card:nth-of-type(4) {
+    background: url(../img/gallery/04@2x.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .gallery-card:nth-of-type(5) {
+    background: url(../img/gallery/08@2x.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .gallery-card:nth-of-type(6) {
+    background: url(../img/gallery/09@2x.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .gallery-card:nth-of-type(8) {
+    background: url(../img/gallery/gruzoperevozki@2x.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+
 .gallery-item {
   height: 180px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -282,6 +315,59 @@ img {
   font-weight: 700;
   margin: auto;
   text-align: center;
+}
+
+.section-price {
+  margin-bottom: 3rem;
+}
+
+.tab {
+  margin-bottom: 3rem;
+}
+
+table {
+  max-width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.6rem;
+}
+
+.tab-title {
+  font-size: 3rem;
+  font-family: inherit;
+  color: #3f51b5;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+th, td {
+  border: 3px solid #3f51b5;
+  vertical-align: middle;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: #3f51b5;
+  font-size: 1.2rem;
+}
+
+th {
+	color: #e3e7f2;
+  background-color: #3f51b5;
+}
+
+td:first-child {
+	text-align: left;
+	padding-left: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .tab-title {
+    font-size: 2rem;
+  }
+
+  th, td {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 767px) {
@@ -372,12 +458,11 @@ img {
   }
 }
 
-@media (min-width: 768px) and (max-width:1023px) {
-  .services__item:nth-last-child(-n+2),
-  .gallery-card:nth-last-child(-n+2) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services__item:nth-last-child(-n + 2),
+  .gallery-card:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -385,8 +470,8 @@ img {
     width: 33.333333%;
   }
 
-  .services__item:nth-last-child(-n+3),
-  .gallery-card:nth-last-child(-n+4) {
+  .services__item:nth-last-child(-n + 3),
+  .gallery-card:nth-last-child(-n + 4) {
     margin-bottom: 0;
   }
 
@@ -394,4 +479,3 @@ img {
     width: 24.6%;
   }
 }
-
